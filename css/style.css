@@ -1,0 +1,961 @@
+@font-face {
+    font-family: "muller";
+    src: url(../fonts/MullerRegular.woff2) format("woff2"),
+    url(../fonts/MullerRegular.woff) format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "muller";
+    src: url(../fonts/MullerBold.woff2) format("woff2"),
+    url(../fonts/MullerBold.woff) format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "muller";
+    src: url(../fonts/MullerLight.woff2) format("woff2"),
+    url(../fonts/MullerLight.woff) format("woff");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "muller";
+    src: url(../fonts/MullerMedium.woff2) format("woff2"),
+    url(../fonts/MullerMedium.woff) format("woff");
+    font-weight: 500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+:root {
+    --theme-color: #CC9933;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.gold {
+    color: var(--theme-color);
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* HEADER */
+
+.header-container {
+    margin-top: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.header-top {
+    display: flex;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-tel {
+    margin-left: 25px;
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 22px;
+    color: #666666;
+    transition: color .3s ease-in-out;
+}
+
+.header-tel:hover {
+    color: var(--theme-color);
+}
+
+.header-right {
+    margin-left: auto;
+    padding-top: 20px;
+}
+
+.header-link {
+    padding-left: 30px;
+    font-size: 16px;
+    font-family: "muller";
+    color: var(--theme-color);
+    background-image: url(../img/keyboard_tab.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: color .3s ease-in-out;
+}
+
+.header-link:hover {
+    color: white;
+}
+
+.nav {
+    margin-top: 35px;
+    padding-left: 22px;
+    padding-right: 21px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    width: 1169px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.nav-list {
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    margin-top: 28px;
+    font-family: "muller";
+    font-size: 16px;
+}
+
+.nav-input {
+    margin-top: 11px;
+    width: 356px;
+    height: 49px;
+    border: 1px solid #fff;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.nav-input-item {
+    margin-left: auto;
+    display: inline;
+}
+
+.nav-link {
+    color: #333333;
+    font-size: 16px;
+    transition: color .3s ease-in-out;
+}
+
+.nav-link:hover{
+    color: var(--theme-color);
+}
+
+.main-heading {
+    margin-left: 45px;
+    font-family: "muller";
+    font-size: 40px;
+    color: #333333;
+}
+
+.nav-input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-12%);
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/search.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+
+/* SECTION DO  */
+
+.section-do {
+    max-width: 1200px;
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+}
+
+.section-do-left {
+    width: 574px;
+}
+
+.section-do-right {
+    width: 574px;
+}
+
+.section-do-offer-card-img {
+    border-radius: 3px;
+}
+
+.section-do-form-list {
+    margin-top: 25px;
+}
+
+.section-do-form-item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.section-do-form-input {
+    padding-left: 22px;
+    width: 520px;
+    height: 70px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 28px 30px 27px 33px;
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--theme-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.btn:hover {
+    color: var(--theme-color);
+    background-color: #fff;
+}
+
+.btn:active {
+    color: #fff;
+    background-color: var(--theme-color);
+    transform: translateY(2px);
+}
+
+.section-do-btn {
+    margin-top: 25px;
+    display: flex;
+}
+
+.section-do-info {
+    margin-left: 30px;
+    margin-top: 28px;
+    font-family: "muller";
+    color: #999999;
+    font-size: 16px;
+}
+
+.gold-span {
+    font-size: 20px;
+    color: var(--theme-color);
+}
+
+.section-do-offer-article {
+    padding-top: 210px;
+    padding-left: 40px;
+    padding-bottom: 34px;
+    line-height: 0.9;
+    width: 595px;
+    background-image: url(../img/special-offer.jpeg);
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.section-do-offer-article-heading {
+    padding-right: 20px;
+    color: #fff;
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 66px;
+    width: 321px;
+}
+
+.section-do-offer-article-text {
+    font-family: "muller";
+    color: #999;
+    font-size: 35px;
+    width: 80px;
+}
+
+.section-do-offer-article-link {
+    margin-left: 40px;
+    padding-right: 15px;
+    font-family: "muller";
+    color: var(--theme-color);
+    background-image: url(../img/arrow-gold.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: color .3s ease-in-out;
+}
+
+.section-do-offer-article-link:hover {
+    color: #fff;
+}
+
+/* SECTION INFO  */
+
+.container-info {
+    margin-top: 75px;
+}
+
+.main-paragraph {
+    display: inline-block;
+    margin-left: 45px;
+    font-family: "muller";
+    font-size: 16px;
+    height: 176px;
+    width: 950px;
+    line-height: 2.5;
+}
+
+/* SECTION SERVICES */
+
+.container-services {
+    margin-top: 65px;
+}
+
+.section-services-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-services-item {
+    margin-bottom: 25px;
+    padding-left: 46px;
+    padding-top: 175px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    width: 573px;
+    background-color: #fff;
+    border-radius: 12px;
+    background-image: url(../img/services1.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.serv-two {
+    background-image: url(../img/services2.jpeg);
+}
+
+.serv-three {
+    background-image: url(../img/services3.jpeg);
+}
+
+.serv-four {
+    background-image: url(../img/services4.jpeg);
+}
+
+.section-services-item:not(:nth-child(2n)) {
+    margin-right: 12px;
+}
+
+.section-services-heading {
+    display: inline-block;
+    padding-right: 30px;
+    color: var(--theme-color);
+    font-family: "muller";
+    font-weight: 500;
+    font-size: 22px;
+    background-image: url(../img/arrow-gold.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.section-services-paragraph {
+    margin-top: auto;
+    width: 395px;
+    font-family: "muller";
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* ADVANTAGES */
+
+.section-advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-advantages-item {
+    margin-bottom: 23px;
+    margin-right: 20px;
+    padding-left: 45px;
+    padding-top: 124px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+    width: 272px;
+    background-color: #fff;
+    border-radius: 10px;
+    background-image: url(../img/bathtub.png);
+    background-repeat: no-repeat;
+    background-size: 63px 59px;
+    background-position-x: 45px;
+    background-position-y: 45px;
+}
+
+.adv-two {
+    background-image: url(../img/hanger.png);
+}
+
+.adv-three {
+    background-image: url(../img/heating.png);
+}
+
+.adv-four {
+    background-image: url(../img/hotel-key.png);
+}
+
+.adv-five {
+    background-image: url(../img/parking.png);
+}
+
+.adv-six {
+    background-image: url(../img/reception.png);
+}
+
+.adv-seven {
+    background-image: url(../img/security-box.png);
+}
+
+.adv-eight {
+    background-image: url(../img/swimming-pool.png);
+}
+
+.section-advantages-text {
+    width: 185px;
+    /* height: 112px; */
+    font-family: "muller";
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* OFFERS */
+
+.container-offers {
+    margin-top: 70px;
+}
+
+.section-offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.section-offers-item {
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.section-offers-item-info {
+    display: flex;
+}
+
+.section-offers-text-block {
+    padding-left: 45px;
+    padding-top: 36px;
+    padding-right: 44px;
+    padding-bottom: 44px;
+}
+
+.section-offers-text {
+    font-family: "muller";
+    font-size: 16px;
+    line-height: 2;
+    width: 195px;
+}
+
+.grey {
+    color: #969696;
+}
+
+.section-offers-btn {
+    margin-top: 18px;
+    display: inline-block;
+    padding: 15px 20px 11px 22px;
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-color: var(--theme-color);
+    transition-property: color, background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.section-offers-btn:hover {
+    color: #fff;
+    background-color: var(--theme-color);
+}
+
+.section-offers-btn:active {
+    color: var(--theme-color);
+    background-color: #fff;
+    transform: translateY(2px);
+}
+
+.stars {
+    margin-top: 6px;
+}
+
+.section-offers-article {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 374px;
+}
+
+.section-offers-img {
+    border-radius: 10px;
+}
+
+.section-offers-item-special {
+    padding: 368px 30px 52px 39px;
+    width: 374px;
+    height: 100%;
+    background-image: url(../img/offers9.jpeg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+/* .section-offers-item-special:hover {
+    cursor: pointer;
+} */
+
+.section-offers-text-special {
+    padding-right: 20px;
+    color: #fff;
+    font-family: "muller";
+    font-weight: 500;
+    font-size: 22px;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    transition: color .3s ease-in-out;
+}
+
+.section-offers-text-special:hover {
+    color: var(--theme-color);
+}
+
+.section-offers-text-special::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.section-offers-text-special::after {
+    margin-left: 10px;
+}
+
+/* CONTACTS */
+
+.section-contacts-space {
+    padding-left: 44px;
+    padding-top: 48px;
+    padding-bottom: 45px;
+    display: flex;
+    width: 1169px;
+    /* height: 620px; */
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.section-contacts-info {
+    margin-right: 65px;
+    width: 385px;
+}
+
+.section-contacts-info-list {
+    margin-bottom: 70px;
+}
+
+.section-contacts-info-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+
+.section-contacts-info-item:not(:first-child) {
+    margin-top: 25px;
+}
+
+.section-contacts-info-item-heading {
+    margin: 0;
+    display: inline;
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 22px;
+    color: #666;
+}
+
+.section-contacts-info-item-adress {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 79px;
+    font-family: "muller";
+    font-size: 16px;
+    color: #333;
+    width: 230px;
+    line-height: 1.5;
+}
+
+.section-contacts-info-item-tel {
+    margin-left: 39px;
+    font-family: "muller";
+    font-size: 16px;
+    color: var(--theme-color);
+    width: 160px;
+    line-height: 1.5;
+}
+
+.section-contacts-info-tel-link {
+    color: var(--theme-color);
+    transition: color .3s ease-in-out;
+}
+
+.section-contacts-info-tel-link:hover {
+    color: #666666;
+}
+
+.section-contacts-info-item-email {
+    margin-left: 80px;
+    font-family: "muller";
+    font-size: 16px;
+    color: #999;
+    width: 228px;
+    line-height: 1.5;
+}
+
+.section-contacts-info-item-email-link {
+    color: var(--theme-color);
+    transition: color .3s ease-in-out;
+}
+
+.section-contacts-info-item-email-link:hover {
+    color: #666;
+}
+
+.section-contacts-info-item-time {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 68px;
+    font-family: "muller";
+    font-size: 16px;
+    width: 190px;
+    line-height: 1.5;
+}
+
+.section-contacts-info-btn {
+    padding: 29px 30px 26px 31px;
+    border: 1px solid var(--theme-color);
+    border-radius: 15px;
+    color: var(--theme-color);
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 16px;
+    transition-property: color, background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.section-contacts-info-btn:hover {
+    color: #fff;
+    background-color: var(--theme-color);
+}
+
+.section-contacts-info-btn:active {
+    color: var(--theme-color);
+    background-color: #fff;
+    transform: translateY(2px);
+}
+
+.section-contacts-form-heading {
+    font-family: "muller";
+    font-size: 40px;
+    color: #333;
+}
+
+.flex-form {
+    margin-top: 22px;
+}
+
+.section-contacts-form-input {
+    padding-left: 21px;
+    width: 305px;
+    height: 71px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+
+.section-contacts-form-input:not(:last-child) {
+    margin-right: 22px;
+}
+
+.section-contacts-form-message {
+    margin-top: 22px;
+    padding-left: 21px;
+    padding-top: 17px;
+    width: 631px;
+    height: 220px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    resize: none;
+}
+
+.section-contacts-form-text {
+    font-family: "muller";
+    font-size: 16px;
+    color: #333;
+}
+
+.section-contacts-form-btn {
+    margin-top: 40px;
+    padding: 29px 128px 26px 130px;
+    font-family: "muller";
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--theme-color);
+    border: 1px solid var(--theme-color);
+    border-radius: 10px;
+    transition-property: color, background-color;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.section-contacts-form-btn:hover {
+    cursor: pointer;
+    color: var(--theme-color);
+    background-color: #fff;
+}
+
+.section-contacts-form-btn:active {
+    color: #fff;
+    background-color: var(--theme-color);
+    transform: translateY(2px);
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 21px;
+    margin-bottom: 30px;
+    padding: 50px 52px 49px 53px;
+    background-color: #333;
+    border-radius: 15px;
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 258px 228px;
+    background-position-x: 735px;
+    background-position-y: 111px;
+    display: flex;
+}
+
+.footer-copyright {
+    margin-right: 125px;
+    width: 310px;
+    height: 240px;
+}
+
+.footer-copyright-one {
+    margin: 0;
+    font-family: "muller";
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    display: block;
+}
+
+.footer-copyright-two {
+    margin-top: 45px;
+    font-family: "muller";
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    display: block;
+
+}
+
+.footer-copyright-three {
+    margin-top: 45px;
+    font-family: "muller";
+    color: var(--theme-color);
+    font-size: 16px;
+    display: block;
+    transition: color .3s ease-in-out;
+}
+
+.footer-info {
+    width: 360px;
+    height: 168px;
+}
+
+.footer-info-adress {
+    margin: 0;
+    font-family: "muller";
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    display: block;
+}
+
+.footer-info-tel {
+    margin-top: 30px;
+}
+
+.footer-info-tel-link {
+    font-family: "muller";
+    color: var(--theme-color);
+    font-size: 16px;
+    transition: color .3s ease-in-out;
+}
+
+.footer-info-email {
+    margin-top: 30px;
+}
+
+.footer-info-email-link {
+    font-family: "muller";
+    color: var(--theme-color);
+    font-size: 16px;
+    transition: color .3s ease-in-out;
+}
+
+.footer-info-tel-link:hover,
+.footer-info-email-link:hover,
+.footer-copyright-three:hover{
+    color: #fff;
+}
+
+.social-tripadvisor {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url(../img/tripadvisor.png);
+    transition: opacity .3s ease-in-out;
+}
+
+.social-tripadvisor:hover {
+    opacity: unset;
+}
+
+.social-twitter {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../img/twitter.png);
+    transition: opacity .3s ease-in-out;
+}
+
+.social-twitter:hover {
+    opacity: unset;
+}
+
+.social-facebook {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../img/facebook.png);
+    transition: opacity .3s ease-in-out;
+}
+
+.social-facebook:hover {
+    opacity: unset;
+}
+
+.social-vk {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-image: url(../img/social.png);
+    transition: opacity .3s ease-in-out;
+}
+
+.social-vk:hover {
+    opacity: unset;
+}
+
+.social-google {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url(../img/google-plus.png);
+    transition: opacity .3s ease-in-out;
+}
+
+.social-google:hover {
+    opacity: unset;
+}
+
+.social-img {
+    opacity: 0.5;
+}
+
+.footer-social-list {
+    margin-left: 260px;
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-social-item {
+    width: 24px;
+    height: 25px;
+}
